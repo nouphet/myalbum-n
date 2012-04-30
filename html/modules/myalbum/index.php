@@ -14,6 +14,7 @@ $xoopsOption['template_main'] = "myalbum{$mydirnumber}_index.html" ;
 include XOOPS_ROOT_PATH . "/header.php" ;
 
 include 'include/assign_globals.php' ;
+
 $xoopsTpl->assign( $myalbum_assign_globals ) ;
 
 $xoopsTpl->assign( 'subcategories' , myalbum_get_sub_categories( 0 , $cattree ) ) ;
@@ -53,6 +54,16 @@ if( ! $prs ) {
 while( $fetched_result_array = $xoopsDB->fetchArray( $prs ) ) {
 	$xoopsTpl->append( 'photos' , myalbum_get_array_for_photo_assign( $fetched_result_array , true ) ) ;
 }
+
+        // モジュールID  // added by naao
+        $module_handler =& xoops_gethandler('module');
+        $this_module =& $module_handler->getByDirname($mydirname);
+        $mid = $this_module->getVar('mid');
+ 
+        // モジュールconfig  // added by naao
+        $config_handler =& xoops_gethandler("config");
+        $mod_config = $config_handler->getConfigsByCat(0, $mid);
+        $xoopsTpl->assign("moduleConfig", $mod_config);
 
 include( XOOPS_ROOT_PATH . "/footer.php" ) ;
 

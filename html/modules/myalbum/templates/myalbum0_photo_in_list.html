@@ -87,7 +87,17 @@
     <img src='<{$mod_url}>/images/hits.gif' width='16' height='16' alt='<{$lang_hitsc}>' title='<{$lang_hitsc}>' /><{$photo.hits}> &nbsp; 
 
     <{* COMMENT COUNTS *}>
-    <img src='<{$mod_url}>/images/comments.gif' width='16' height='16' alt='<{$lang_commentsc}>' title='<{$lang_commentsc}>' /><{$photo.comments}> &nbsp; &nbsp;
+    <img src='<{$mod_url}>/images/comments.gif' width='16' height='16' alt='<{$lang_commentsc}>' title='<{$lang_commentsc}>' />
+    <{if $moduleConfig.comment_dirname}>
+        <{d3comment mode="count" var="comcount" mydirname=$xoops_dirname id=$photo.lid class="myalbumD3commentContent"}>
+        <{if $comcount}>
+            (<{$comcount}>)
+        <{else}>
+            (0)
+        <{/if}>
+    <{else}>
+        <{$photo.comments}> &nbsp; &nbsp;
+    <{/if}>
 
     <{* RANK & RATING *}>
     <{if $canrateview}>

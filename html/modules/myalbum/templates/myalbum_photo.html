@@ -96,8 +96,17 @@
     <img src='<{$mod_url}>/images/hits.gif' width='16' height='16' alt='<{$lang_hitsc}>' title='<{$lang_hitsc}>' /><{$photo.hits}> &nbsp; 
 
     <{* COMMENT COUNTS *}>
-    <img src='<{$mod_url}>/images/comments.gif' width='16' height='16' alt='<{$lang_commentsc}>' title='<{$lang_commentsc}>' /><{$photo.comments}> &nbsp; &nbsp;
-
+    <img src='<{$mod_url}>/images/comments.gif' width='16' height='16' alt='<{$lang_commentsc}>' title='<{$lang_commentsc}>' />
+    <{if $moduleConfig.comment_dirname}>
+        <{d3comment mode="count" var="comcount" mydirname=$xoops_dirname id=$photo.lid class="myalbumD3commentContent"}>
+        <{if $comcount}>
+            (<{$comcount}>)
+        <{else}>
+            (0)
+        <{/if}>
+    <{else}>
+        <{$photo.comments}>
+    <{/if}> &nbsp; &nbsp;
     <{* RANK & RATING *}>
     <{if $canrateview}>
       <{if $photo.rating > 0}>
@@ -141,12 +150,16 @@
     <{$photo_nav}>
 </p>
 
-<div style="text-align: center; padding: 3px; margin: 3px;">
+<div style="margin: 3px; padding: 3px;">
+<{if $moduleConfig.comment_dirname}>
+ <{d3comment mydirname=$xoops_dirname id=$photo.lid subject=$photo.title class="myalbumD3commentContent"}>
+ 
+<{else}>
+ <div style="text-align: center; padding: 3px; margin: 3px;">
   <{$commentsnav}>
   <{$lang_notice}>
-</div>
+ </div>
 
-<div style="margin: 3px; padding: 3px;">
 <!-- start comments loop -->
 <{if $comment_mode == "flat"}>
   <{include file="db:system_comments_flat.html"}>
@@ -156,6 +169,7 @@
   <{include file="db:system_comments_nest.html"}>
 <{/if}>
 <!-- end comments loop -->
+<{/if}>
 </div>
 
 <table width="100%" cellspacing="0" cellpadding="0" border="0">

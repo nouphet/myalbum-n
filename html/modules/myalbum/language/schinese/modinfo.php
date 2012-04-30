@@ -122,8 +122,18 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFY','新图片');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP','当该分类中有新图片发布时通知我');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC','当该分类中有新图片发布时收取通知');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ','[{X_SITENAME}] {X_MODULE}: 自动通知 : 新图片发布');
-
 }
+
+//d3comment integration
+define("_ALBM_COM_DIRNAME","Comment integration directory");
+define("_ALBM_COM_DIRNAMEDSC","When use D3-comment integration system. <br/>write your d3forum (html) directory <br/>If you do not use comments or use xoops comment system, leave this in empty.");
+define("_ALBM_COM_FORUM_ID","d3forum_id");
+define("_ALBM_COM_FORUM_IDDSC","When you set above integration diredtory, write forum_id");
+define("_ALBM_COM_ORDER","Order of comment integration");
+define("_ALBM_COM_ORDERDSC","When you set comment integration, select display order of comment posts");
+define("_ALBM_COM_VIEW","View of comment-integration");
+define("_ALBM_COM_VIEWDSC","select flat or thread");
+define("_ALBM_COM_POSTSNUM","'Max posts displayed in comment integration");
 
 
 //////////////////////////////////////////////////////////////////////////////////////////

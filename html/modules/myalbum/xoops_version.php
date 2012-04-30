@@ -32,7 +32,7 @@ if( ! preg_match( '/^(\D+)(\d*)$/' , $mydirname , $regs ) ) echo ( "invalid dirn
 $mydirnumber = $regs[2] === '' ? '' : intval( $regs[2] ) ;
 
 $modversion['name'] = _ALBM_MYALBUM_NAME . $mydirnumber ;
-$modversion['version'] = 2.88 ; // = 2.90 - 0.02 (beta2)
+$modversion['version'] = 2.89 ;
 $modversion['description'] = _ALBM_MYALBUM_DESC;
 $modversion['author'] = "GIJ=CHECKMATE<br />PEAK Corp.(http://www.peak.ne.jp/)" ;
 $modversion['credits'] = "Original: Daniel Branco<br />(http://bluetopia.homeip.net)<br />Kazumi Ono<br />(http://www.mywebaddons.com/)<br />The XOOPS Project" ;
@@ -387,6 +387,56 @@ $modversion['config'][] = array(
 	'formtype'		=> 'yesno' ,
 	'valuetype'		=> 'int' ,
 	'default'		=> '0' ,
+	'options'		=> array()
+) ;
+
+$modversion['config'][] = array(
+        'name'			=> 'comment_dirname' ,
+    	'title'            	=> '_ALBM_COM_DIRNAME' ,
+    	'description'        	=> '_ALBM_COM_DIRNAMEDSC' ,
+        'formtype'		=> 'textbox',
+        'valuetype'		=> 'text',
+        'default'		=> '',
+	'options'		=> array()
+);
+ 
+$modversion['config'][]= array(
+        'name'			=> 'comment_forum_id',
+    	'title'         	=> '_ALBM_COM_FORUM_ID',
+    	'description'        	=> '_ALBM_COM_FORUM_IDDSC',
+        'formtype'		=> 'textbox',
+        'valuetype'		=> 'int',
+        'default'		=> '0',
+	'options'		=> array()
+);
+
+$modversion['config'][] = array(
+	'name'			=> 'comment_order' ,
+	'title'			=> '_ALBM_COM_ORDER' ,
+	'description'		=> '_ALBM_COM_ORDERDSC' ,
+	'formtype'		=> 'select' ,
+	'valuetype'		=> 'text' ,
+	'default'		=> 'desc' ,
+	'options'		=> array( '_OLDESTFIRST' => 'asc' , '_NEWESTFIRST' => 'desc' )
+) ;
+
+$modversion['config'][] = array(
+	'name'			=> 'comment_view' ,
+	'title'			=> '_ALBM_COM_VIEW' ,
+	'description'		=> '_ALBM_COM_VIEWDSC' ,
+	'formtype'		=> 'select' ,
+	'valuetype'		=> 'text' ,
+	'default'		=> 'listposts_flat' ,
+	'options'		=> array( '_FLAT' => 'listposts_flat' , '_THREADED' => 'listtopics' )
+) ;
+
+$modversion['config'][] = array(
+	'name'			=> 'comment_posts_num' ,
+	'title'			=> '_ALBM_COM_POSTSNUM' ,
+	'description'		=> '' ,
+	'formtype'		=> 'textbox' ,
+	'valuetype'		=> 'int' ,
+	'default'		=> '10' ,
 	'options'		=> array()
 ) ;
 
