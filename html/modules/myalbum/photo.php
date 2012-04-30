@@ -115,6 +115,15 @@ if( $numrows > 1 ) {
 $xoopsTpl->assign( 'photo_nav' , $photo_nav ) ;
 
 // comments
+        // モジュールID  // added by naao
+        $module_handler =& xoops_gethandler('module');
+        $this_module =& $module_handler->getByDirname($mydirname);
+        $mid = $this_module->getVar('mid');
+ 
+        // モジュールconfig  // added by naao
+        $config_handler =& xoops_gethandler("config");
+        $mod_config = $config_handler->getConfigsByCat(0, $mid);
+        $xoopsTpl->assign("moduleConfig", $mod_config);
 
 include XOOPS_ROOT_PATH.'/include/comment_view.php';
 

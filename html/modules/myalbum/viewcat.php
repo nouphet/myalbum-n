@@ -69,7 +69,6 @@ if( $cid > 0 ) {
 
 	// This means 'my photo'
 	if( $uid < 0 ) {
-		$xoopsModule->getInfo() ;
 		$where = "submitter=$my_uid" ;
 		$get_append = "uid=-1" ;
 		$xoopsTpl->assign( 'uid' , -1 ) ;
@@ -137,6 +136,15 @@ if( $photo_small_sum > 0 ) {
 		$xoopsTpl->append( 'photos' , $photo ) ;
 	}
 }
+        // モジュールID  // added by naao
+        $module_handler =& xoops_gethandler('module');
+        $this_module =& $module_handler->getByDirname($mydirname);
+        $mid = $this_module->getVar('mid');
+ 
+        // モジュールconfig  // added by naao
+        $config_handler =& xoops_gethandler("config");
+        $mod_config = $config_handler->getConfigsByCat(0, $mid);
+        $xoopsTpl->assign("moduleConfig", $mod_config);
 
 include( XOOPS_ROOT_PATH . "/footer.php" ) ;
 

@@ -1,0 +1,7 @@
+2012-04-29 (ver 2.89)
+ - changed for MySQL5.5, TYPE=MYISAM -> ENGINE=MYISAM
+
+2011-07-14
+ - crated myalbum-P d3comment integration version.
+   see http://www.naaon.com/modules/plactice/index.php/home/hobby/xoops/myalbum_288a.htm
+

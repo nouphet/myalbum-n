@@ -29,4 +29,5 @@ include XOOPS_ROOT_PATH."/modules/$mydirname/include/get_perms.php" ;
 include_once XOOPS_ROOT_PATH."/modules/$mydirname/include/functions.php" ;
 include_once XOOPS_ROOT_PATH."/modules/$mydirname/include/draw_functions.php" ;
 include_once XOOPS_ROOT_PATH."/modules/$mydirname/include/gtickets.php" ;
+
 ?>

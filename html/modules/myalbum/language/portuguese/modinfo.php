@@ -118,7 +118,6 @@ define("_ALBM_MYALBUM_ADMENU3","Verificar Configuraî÷es&Ambientes");
 define("_ALBM_MYALBUM_ADMENU4","Registro em Lote");
 define("_ALBM_MYALBUM_ADMENU5","Reconstruir Thumbnails");
 
-
 // Text for notifications
 define('_MI_MYALBUM_GLOBAL_NOTIFY', 'Geral');
 define('_MI_MYALBUM_GLOBAL_NOTIFYDSC', 'Opî÷es de notificaîåo geral');
@@ -136,6 +135,17 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFY', 'Nova Foto');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'Notificar-me quando qualquer nova foto for enviada nesta categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'Receber notificaîåo quando qualquer nova foto for enviada nesta categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: notificaîåo automáÕica: Nova Foto');
+
+//d3comment integration
+define("_ALBM_COM_DIRNAME","Comment integration directory");
+define("_ALBM_COM_DIRNAMEDSC","When use D3-comment integration system. <br/>write your d3forum (html) directory <br/>If you do not use comments or use xoops comment system, leave this in empty.");
+define("_ALBM_COM_FORUM_ID","d3forum_id");
+define("_ALBM_COM_FORUM_IDDSC","When you set above integration diredtory, write forum_id");
+define("_ALBM_COM_ORDER","Order of comment integration");
+define("_ALBM_COM_ORDERDSC","When you set comment integration, select display order of comment posts");
+define("_ALBM_COM_VIEW","View of comment-integration");
+define("_ALBM_COM_VIEWDSC","select flat or thread");
+define("_ALBM_COM_POSTSNUM","'Max posts displayed in comment integration");
 
 }
 

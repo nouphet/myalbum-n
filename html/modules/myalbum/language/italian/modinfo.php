@@ -34,13 +34,13 @@ define( "_ALBM_CFG_DESCTHUMBSPATH" , "(come per 'Percorso delle immagini')." ) ;
 //define( "_ALBM_CFG_USEIMAGICK" , "Use ImageMagick for treating images" ) ;
 //define( "_ALBM_CFG_DESCIMAGICK" , "Not use ImageMagick cause Not work resize or rotate the main photo, and make thumbnails by GD.<br />You'd better use ImageMagick if you can." ) ;
 define( "_ALBM_CFG_IMAGINGPIPE" , "Metodo di trattamento delle immagini" ) ;
-define( "_ALBM_CFG_DESCIMAGINGPIPE" , "Praticamente ogni ambiente PHP può utilizzare GD, ma le funzionalità sono limitate. Utlizza ImageMagick o NetPBM se puoi." ) ;
+define( "_ALBM_CFG_DESCIMAGINGPIPE" , "Praticamente ogni ambiente PHP puutilizzare GD, ma le funzionalitsono limitate. Utlizza ImageMagick o NetPBM se puoi." ) ;
 define( "_ALBM_CFG_FORCEGD2" , "Forza conversione GD2" ) ;
-define( "_ALBM_CFG_DESCFORCEGD2" , "Anche se GD è presente  forza la conversione GD2(truecolor).<br />(Valido solo se stai usando GD)" ) ;
+define( "_ALBM_CFG_DESCFORCEGD2" , "Anche se GD presente  forza la conversione GD2(truecolor).<br />(Valido solo se stai usando GD)" ) ;
 define( "_ALBM_CFG_IMAGICKPATH" , "Percorso di ImageMagick" ) ;
-define( "_ALBM_CFG_DESCIMAGICKPATH" , "Può anche essere lasciato vuoto.<br />(Valido solo se stai usando ImageMagick)" ) ;
+define( "_ALBM_CFG_DESCIMAGICKPATH" , "Puanche essere lasciato vuoto.<br />(Valido solo se stai usando ImageMagick)" ) ;
 define( "_ALBM_CFG_NETPBMPATH" , "Percorso di NetPBM" ) ;
-define( "_ALBM_CFG_DESCNETPBMPATH" , "Può anche essere lasciato vuoto.<br />(Valido solo se stai usando NetPBM)" ) ;
+define( "_ALBM_CFG_DESCNETPBMPATH" , "Puanche essere lasciato vuoto.<br />(Valido solo se stai usando NetPBM)" ) ;
 define( "_ALBM_CFG_POPULAR" , "Visite per essere 'popolare'" ) ;
 define( "_ALBM_CFG_NEWDAYS" , "Durata delle icone 'nuovo' e 'aggiornato'" ) ;
 define( "_ALBM_CFG_NEWPHOTOS" , "Numero di nuove foto nella pagina principale" ) ;
@@ -67,13 +67,13 @@ define( "_ALBM_CFG_CATONSUBMENU" , "Registra le categorie principali nel sottome
 define( "_ALBM_CFG_NAMEORUNAME" , "Mostra chi ha inviato le foto" ) ;
 define( "_ALBM_CFG_DESCNAMEORUNAME" , "Seleziona il tipo di 'nome' mostrato" ) ;
 define( "_ALBM_CFG_VIEWCATTYPE" , "Vista utilizzata" ) ;
-define( "_ALBM_CFG_COLSOFTABLEVIEW" , "Numero di colonne visualizzate in modalità 'Tabella'" ) ;
+define( "_ALBM_CFG_COLSOFTABLEVIEW" , "Numero di colonne visualizzate in modalit'Tabella'" ) ;
 define( "_ALBM_CFG_ALLOWEDEXTS" , "Estensioni consentite negli upload" ) ;
 define( "_ALBM_CFG_DESCALLOWEDEXTS" , "Inserisci le estensioni separate da '|'. (Es. 'jpg|jpeg|gif|png') .<br />tutti i caratteri devono essere minuscoli. Non inserire punti o spazi<br />NON aggiungere php or phtml, etc." ) ;
 define( "_ALBM_CFG_ALLOWEDMIME" , "MIME Types consentiti" ) ;
 define( "_ALBM_CFG_DESCALLOWEDMIME" , "Iserisci i MIME Types separati da '|'. (Es. 'image/gif|image/jpeg|image/png')" ) ;
 define( "_ALBM_CFG_USESITEIMG" , "Usa [siteimg] nel Gestore Immagini di XOOPS" ) ;
-define( "_ALBM_CFG_DESCUSESITEIMG" , "Il Gestore Immagini di XOOPS utilizzerà [siteimg] al posto di [img].<br />Vedi il README per le istruzioni su come abilitare il tag [siteimg]" ) ;
+define( "_ALBM_CFG_DESCUSESITEIMG" , "Il Gestore Immagini di XOOPS utilizzer[siteimg] al posto di [img].<br />Vedi il README per le istruzioni su come abilitare il tag [siteimg]" ) ;
 
 define( "_ALBM_OPT_USENAME" , "Nome" ) ;
 define( "_ALBM_OPT_USEUNAME" , "Login" ) ;
@@ -88,8 +88,8 @@ define( "_ALBM_OPT_VIEWTABLE" , "Tabella" ) ;
 
 // Sub menu titles
 define("_ALBM_TEXT_SMNAME1","Invia");
-define("_ALBM_TEXT_SMNAME2","Le più viste");
-define("_ALBM_TEXT_SMNAME3","Le più votate");
+define("_ALBM_TEXT_SMNAME2","Le piviste");
+define("_ALBM_TEXT_SMNAME3","Le pivotate");
 define("_ALBM_TEXT_SMNAME4","Le mie foto");
 
 // Names of admin menu items
@@ -103,7 +103,6 @@ define("_ALBM_MYALBUM_ADMENU5","Generazione anteprime");
 define("_ALBM_MYALBUM_ADMENU_IMPORT","Importa immagini");
 define("_ALBM_MYALBUM_ADMENU_EXPORT","Esporta immagini");
 define("_ALBM_MYALBUM_ADMENU_MYBLOCKSADMIN","Gestione Blocchi e Gruppi");
-
 
 // Text for notifications
 define('_MI_MYALBUM_GLOBAL_NOTIFY', 'Generale');
@@ -122,6 +121,17 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFY', 'Nuova foto');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'Notificami quando viene pubblicata una  nuova foto in questa categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'Ricevi una notifica quando viene pubblicata una  nuova foto in questa categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: auto-notifica : Nuova foto');
+
+//d3comment integration
+define("_ALBM_COM_DIRNAME","Comment integration directory");
+define("_ALBM_COM_DIRNAMEDSC","When use D3-comment integration system. <br/>write your d3forum (html) directory <br/>If you do not use comments or use xoops comment system, leave this in empty.");
+define("_ALBM_COM_FORUM_ID","d3forum_id");
+define("_ALBM_COM_FORUM_IDDSC","When you set above integration diredtory, write forum_id");
+define("_ALBM_COM_ORDER","Order of comment integration");
+define("_ALBM_COM_ORDERDSC","When you set comment integration, select display order of comment posts");
+define("_ALBM_COM_VIEW","View of comment-integration");
+define("_ALBM_COM_VIEWDSC","select flat or thread");
+define("_ALBM_COM_POSTSNUM","'Max posts displayed in comment integration");
 
 }
 

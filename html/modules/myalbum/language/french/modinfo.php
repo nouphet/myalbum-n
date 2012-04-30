@@ -13,7 +13,7 @@ define( 'MYALBUM_MI_LOADED' , 1 ) ;
 define("_ALBM_MYALBUM_NAME","MyAlbum");
 
 // A brief description of this module
-define("_ALBM_MYALBUM_DESC","Cr&eacute;ation d'une gallerie photos où les utilisateurs peuvent chercher/soumettre et voter.");
+define("_ALBM_MYALBUM_DESC","Cr&eacute;ation d'une gallerie photos oles utilisateurs peuvent chercher/soumettre et voter.");
 
 // Names of blocks for this module (Not all module has blocks)
 define("_ALBM_BNAME_RECENT","Photos r&eacute;centes");
@@ -37,7 +37,7 @@ define( "_ALBM_CFG_IMAGICKPATH" , "Chemin d'ImageMagick" ) ;
 define( "_ALBM_CFG_DESCIMAGICKPATH" , "Le chemin complet vers 'convert' doit &ecirc;tre fournit, laissez &agrave; blanc dans la plupart des environnements.<br />Cette configuration n'est significative que si vous utilisez ImageMagick" ) ;
 define( "_ALBM_CFG_NETPBMPATH" , "Chemin de NetPBM" ) ;
 define( "_ALBM_CFG_DESCNETPBMPATH" , "Le chemin complet vers 'pnmscale' doit &ecirc;ter fournit, laissez &agrave; blanc dans la plupart des environnements.<br />Cette configuration n'est significative que si vous utilisez NetPBM" ) ;
-define( "_ALBM_CFG_POPULAR" , "Nombre de fois où l'image est vue pour &ecirc;tre populaire" ) ;
+define( "_ALBM_CFG_POPULAR" , "Nombre de fois ol'image est vue pour &ecirc;tre populaire" ) ;
 define( "_ALBM_CFG_NEWDAYS" , "Nombre de jours durant lesquels l'image est marqu&eacute;e comme 'nouvelle' ou 'mise &agrave; jour'" ) ;
 define( "_ALBM_CFG_NEWPHOTOS" , "Nombre de nouvelles photos sur la page d'accueil du module" ) ;
 define( "_ALBM_CFG_DEFAULTORDER" , "Ordre par d&eacute;faut dans la vue par cat&eacute;gorie" ) ;
@@ -100,8 +100,6 @@ define("_ALBM_MYALBUM_ADMENU5","Reg&eacute;n&eacute;ration des vignettes");
 define("_ALBM_MYALBUM_ADMENU_IMPORT","Import d'images");
 define("_ALBM_MYALBUM_ADMENU_EXPORT","Export d'images");
 define("_ALBM_MYALBUM_ADMENU_MYBLOCKSADMIN","Gestion des blocs et des groupes");
-
-
 // Text for notifications
 define('_MI_MYALBUM_GLOBAL_NOTIFY', 'Globale');
 define('_MI_MYALBUM_GLOBAL_NOTIFYDSC', 'Notification globale de myAlbum-P');
@@ -119,6 +117,17 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFY', 'Nouvelle photo');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'Notifiez moi lorsqu\'une nouvelle photo est post&eacute;e dans la cat&eacute;gorie en cours');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'Recevoir une notification lorsqu\'une nouvelle photo est post&eacute;e dans la cat&eacute;gorie en cours');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: auto-notification : Nouvelle photo');
+
+//d3comment integration
+define("_ALBM_COM_DIRNAME","Comment integration directory");
+define("_ALBM_COM_DIRNAMEDSC","When use D3-comment integration system. <br/>write your d3forum (html) directory <br/>If you do not use comments or use xoops comment system, leave this in empty.");
+define("_ALBM_COM_FORUM_ID","d3forum_id");
+define("_ALBM_COM_FORUM_IDDSC","When you set above integration diredtory, write forum_id");
+define("_ALBM_COM_ORDER","Order of comment integration");
+define("_ALBM_COM_ORDERDSC","When you set comment integration, select display order of comment posts");
+define("_ALBM_COM_VIEW","View of comment-integration");
+define("_ALBM_COM_VIEWDSC","select flat or thread");
+define("_ALBM_COM_POSTSNUM","'Max posts displayed in comment integration");
 
 }
 

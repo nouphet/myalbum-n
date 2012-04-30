@@ -77,7 +77,6 @@ define( "_ALBUM_OPT_CALCWHINSIDEBOX" , "╔¤дл╣тд╡д╬┬чдндд╩¤дм╗╪─ъ┐Ї├═д╦д╩дыдшдж╝л
 define( "_ALBM_OPT_VIEWLIST" , "└т╠└╩╕╔╒еъе╣е╚╔╜╝и" ) ;
 define( "_ALBM_OPT_VIEWTABLE" , "е╞б╝е╓еы╔╜╝и" ) ;
 
-
 // Sub menu titles
 define("_ALBM_TEXT_SMNAME1","┼ъ╣╞");
 define("_ALBM_TEXT_SMNAME2","╣т┐═╡д");
@@ -115,6 +114,16 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'д│д╬еле╞е┤еъд╦┐╖д┐д╦╝╠┐┐дм┼╨╧
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'д│д╬еле╞е┤еъд╦┐╖д┐д╦╝╠┐┐дм┼╨╧┐д╡дьд┐╗■д╦─╠├╬д╣ды');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ┐╖д┐д╦╝╠┐┐дм┼╨╧┐д╡дьд▐д╖д┐');
 
-}
+//d3comment integration
+define("_ALBM_COM_DIRNAME","е│есеєе╚┼¤╣чд╣дыd3forumд╬dirname");
+define("_ALBM_COM_DIRNAMEDSC","d3forumд╬е│есеєе╚┼¤╣ч╡б╟╜дЄ╗╚═╤д╣ды╛ь╣чд╧<br/>е╒ейб╝ещерд╬html┬же╟егеьепе╚еъ╠╛дЄ╗╪─ъд╖д▐д╣бг<br/>xoopsе│есеєе╚дЄ╗╚═╤д╣ды╛ь╣чдфе│есеєе╚╡б╟╜дЄ╠╡╕·д╦д╣ды╛ь╣чд╧╢ї═єд╟д╣бг");
+define("_ALBM_COM_FORUM_ID","е│есеєе╚┼¤╣чд╣дые╒ейб╝ещерд╬╚╓╣ц");
+define("_ALBM_COM_FORUM_IDDSC","е│есеєе╚┼¤╣чдЄ┴к┬Єд╖д┐╛ь╣чбвforum_idдЄ╔мд║╗╪─ъд╖д╞дпд└д╡ддбг");
+define("_ALBM_COM_ORDER","е│есеєе╚┼¤╣чд╬╔╜╝и╜ч╜°");
+define("_ALBM_COM_ORDERDSC","е│есеєе╚┼¤╣чдЄ┴к┬Єд╖д┐╛ь╣чд╬бве│есеєе╚д╬┐╖д╖дд╜чб┐╕┼дд╜чдЄ╗╪─ъд╟днд▐д╣бг");
+define("_ALBM_COM_VIEW","е│есеєе╚┼¤╣чд╬╔╜╝и╩¤╦б");
+define("_ALBM_COM_VIEWDSC","е╒еще├е╚╔╜╝идле╣еье├е╔╔╜╝идлдЄ┴к┬Єд╖д▐д╣бг");
+define("_ALBM_COM_POSTSNUM","е│есеєе╚┼¤╣чд╬е╒еще├е╚╔╜╝ид╦дкд▒ды║╟┬ч╔╜╝и╖я┐Ї");
 
+}
 ?>

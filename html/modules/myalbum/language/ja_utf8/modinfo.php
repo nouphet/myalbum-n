@@ -77,7 +77,6 @@ define( "_ALBUM_OPT_CALCWHINSIDEBOX" , "幅か高さの大きい方が指定数�
 define( "_ALBM_OPT_VIEWLIST" , "説明文付リスト表示" ) ;
 define( "_ALBM_OPT_VIEWTABLE" , "テーブル表示" ) ;
 
-
 // Sub menu titles
 define("_ALBM_TEXT_SMNAME1","投稿");
 define("_ALBM_TEXT_SMNAME2","高人気");
@@ -115,6 +114,16 @@ define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'このカテゴリに新た�
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'このカテゴリに新たに写真が登録された時に通知する');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: 新たに写真が登録されました');
 
-}
+//d3comment integration
+define("_ALBM_COM_DIRNAME","コメント統合するd3forumのdirname");
+define("_ALBM_COM_DIRNAMEDSC","d3forumのコメント統合機能を使用する場合は<br/>フォーラムのhtml側ディレクトリ名を指定します。<br/>xoopsコメントを使用する場合やコメント機能を無効にする場合は空欄です。");
+define("_ALBM_COM_FORUM_ID","コメント統合するフォーラムの番号");
+define("_ALBM_COM_FORUM_IDDSC","コメント統合を選択した場合、forum_idを必ず指定してください。");
+define("_ALBM_COM_ORDER","コメント統合の表示順序");
+define("_ALBM_COM_ORDERDSC","コメント統合を選択した場合の、コメントの新しい順／古い順を指定できます。");
+define("_ALBM_COM_VIEW","コメント統合の表示方法");
+define("_ALBM_COM_VIEWDSC","フラット表示かスレッド表示かを選択します。");
+define("_ALBM_COM_POSTSNUM","コメント統合のフラット表示における最大表示件数");
 
+}
 ?>

@@ -15,7 +15,7 @@ CREATE TABLE myalbum1_cat (
   KEY (weight),
   KEY (depth),
   KEY (pid)
-) TYPE=MyISAM;
+) ENGINE=MYISAM;
 # --------------------------------------------------------
 
 #
@@ -41,7 +41,7 @@ CREATE TABLE myalbum1_photos (
   KEY (date),
   KEY (status),
   KEY (title)
-) TYPE=MyISAM;
+) ENGINE=MYISAM;
 # --------------------------------------------------------
 
 #
@@ -52,7 +52,7 @@ CREATE TABLE myalbum1_text (
   lid int(11) unsigned NOT NULL default '0',
   description text,
   PRIMARY KEY lid (lid)
-) TYPE=MyISAM;
+) ENGINE=MYISAM;
 # --------------------------------------------------------
 
 #
@@ -70,5 +70,5 @@ CREATE TABLE myalbum1_votedata (
   KEY (lid),
   KEY (ratinguser),
   KEY (ratinghostname)
-) TYPE=MyISAM;
+) ENGINE=MYISAM;
 
